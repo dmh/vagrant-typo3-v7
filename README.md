@@ -35,7 +35,7 @@ Open SSH session: `vagrant ssh`
 
 ### Connecting
 
-Apache server is available at http://192.168.33.72
+Apache server is available at http://192.168.33.172
 
 Web root: `/var/www/public/`
 

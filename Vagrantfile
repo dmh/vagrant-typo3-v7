@@ -3,12 +3,11 @@
 
 Vagrant.configure("2") do |config|
 
-    #Vagrant BOX / Official Ubuntu Server 14.04 LTS (Trusty Tahr) builds
     config.vm.box = "typo3box-v1"
     config.vm.box_check_update = false
 
-    #Private Network / Static IP = 192.168.33.171 / ip -.171 for TYPO3 7.1
-    config.vm.network "private_network", ip: "192.168.33.202"
+    #Private Network / Static IP = 192.168.33.172 / ip -.172 for TYPO3 7.2
+    config.vm.network "private_network", ip: "192.168.33.172"
     config.vm.synced_folder ".", "/var/www", type: "nfs"
 
     #Public network / commented
@@ -23,7 +22,7 @@ Vagrant.configure("2") do |config|
     config.vm.provision :shell, path: "provision.sh"
 
     #Name of VM host
-    config.vm.define "test" do |typo3|
+    config.vm.define "vagrant-typo3-7" do |typo3|
     end
 
     #VM Performance
