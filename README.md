@@ -1,9 +1,11 @@
-#Vagrant TYPO3 7.1.0
+TYPO3 7.2.0
+
+#Vagrant TYPO3
 
 ###What is it?
-Package to quick deploy blank **TYPO3** 7.1.0 on virtual machine.
+Package to quick deploy blank **TYPO3** on virtual machine.
 
-**Vagrant** config + **Shell** Provisioner + **Bower** components
+**Vagrant** config + **Shell** Provisioner + **Bower** components + **Composer** components
 
 ### Requirements
 
@@ -11,13 +13,17 @@ Package to quick deploy blank **TYPO3** 7.1.0 on virtual machine.
 - Vagrant <http://www.vagrantup.com>
 - Git <http://git-scm.com/>
 - Bower <http://bower.io/>
+- Composer <https://getcomposer.org/>
 
 ### Usage
 
 ```
-git clone https://github.com/dmh/Vagrant-TYPO3-7.1.0.git
-cd Vagrant-TYPO3-7.1.0
+git clone https://github.com/dmh/vagrant-typo3-v7.git
+cd vagrant-typo3-v7
 bower install
+cd typo3
+composer install
+cd ..
 vagrant up
 ```
 
@@ -29,7 +35,7 @@ Open SSH session: `vagrant ssh`
 
 ### Connecting
 
-Apache server is available at http://192.168.33.34
+Apache server is available at http://192.168.33.72
 
 Web root: `/var/www/public/`
 
@@ -45,9 +51,9 @@ TYPO3
 - TYPO3 password: admin1234
 - TYPO3 install tools password: admin1234
 
+### Vagrant box: typo3box-v1.box: <https://www.dropbox.com/s/a8mgflj93nvfxgh/typo3box-v1.box?dl=0/>
 
-### Shell Provisioner. Installed Components.
-
+### Installed Components.
 - Ubuntu 14.04 64-bit (Trusty)
 - Apache 2
 - PHP 5.5
