@@ -3,7 +3,7 @@ return array(
 	'BE' => array(
 		'debug' => FALSE,
 		'explicitADmode' => 'explicitAllow',
-		'installToolPassword' => '$P$C373vLNMHg/ZkqDsfwyLgGTyn8N1zu0',
+		'installToolPassword' => '$P$CDUx1JHCd.QYBoGLusgUhQ0ibei9om0',
 		'loginSecurityLevel' => 'rsa',
 	),
 	'DB' => array(
@@ -54,9 +54,9 @@ return array(
 		'devIPmask' => '',
 		'displayErrors' => 0,
 		'enableDeprecationLog' => FALSE,
-		'encryptionKey' => '8829b741234b04df97269bbe566575700d1ec8f1500e4a8b65976dc19b620f7b3ad84a65de6242683c6c15bc8c57c3cc',
+		'encryptionKey' => '71e9fe1dbb22fac0eeaeebbd62569b93947f8dfeaa30f1b92728c551dabcdbee2ec9fa2123b2e99241ec0486d0d79ccc',
 		'isInitialInstallationInProgress' => FALSE,
-		'sitename' => 'CORE Theme',
+		'sitename' => 'TYPO3 site',
 		'sqlDebug' => 0,
 		'systemLogLevel' => 2,
 		't3lib_cs_convMethod' => 'mbstring',

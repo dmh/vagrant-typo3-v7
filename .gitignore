@@ -6,8 +6,6 @@ public/fileadmin/user_upload
 public/uploads
 public/typo3temp
 html
-*.sql
-typo3db
 typo3
 !public/typo3
 

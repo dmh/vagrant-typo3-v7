@@ -1,4 +1,4 @@
-TYPO3 7.2.0
+TYPO3 7.2.0     git tag 7.2.0
 
 #Vagrant TYPO3
 
